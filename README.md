@@ -2,7 +2,7 @@
 ###Advanced Server Info Menu for ArmA 3 Exile Mod
 <br />
 ######HOW TO DOWNLOAD
-Click the "Download as zip" button on the right <br />
+Click the "Download ZIP" button<br />
 ######INSTALLATION GUIDE
 ```
 Exile.MapName\init.sqf (contents) >> MPmissions\Exile.*nameOfMap*\init.sqf
