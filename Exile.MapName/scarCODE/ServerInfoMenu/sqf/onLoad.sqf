@@ -21,6 +21,7 @@ if not isNull _dsp then
 
    _dsp spawn
    {
+      disableSerialization;
       _dsp = _this;
       _ctrlUptime = _dsp displayCtrl 2;
       _ctrlPlayerCount = _dsp displayCtrl 3;
