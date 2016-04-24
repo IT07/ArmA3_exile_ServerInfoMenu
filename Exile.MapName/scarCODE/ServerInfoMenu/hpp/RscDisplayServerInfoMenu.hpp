@@ -19,7 +19,7 @@ class RscDisplayServerInfoMenu
       deletable = 0;
       fade = 1;
       fixedWidth = 0;
-      font = "";
+      font = "PuristaLight";
       idc = -1;
       linespacing = 1;
       shadow = 0;
