@@ -19,10 +19,10 @@ if not isNull _dsp then
       _listBox lbAdd (toUpper (configName _x));
    } forEach _listBoxItems;
 
-   _dsp spawn
+   [_dsp] spawn
    {
       disableSerialization;
-      _dsp = _this;
+      _dsp = _this select 0;
       _ctrlUptime = _dsp displayCtrl 2;
       _ctrlPlayerCount = _dsp displayCtrl 3;
       while {true} do
