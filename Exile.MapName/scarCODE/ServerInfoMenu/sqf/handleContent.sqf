@@ -3,7 +3,7 @@ _dsp = uiNamespace getVariable ["RscDisplayServerInfoMenu", displayNull];
 if not isNull _dsp then
 {
    _ctrlMenu = _dsp displayCtrl 7;
-   _className = _ctrlMenu lbText (lbCurSel _ctrlMenu);
+   _className = _ctrlMenu lbData (lbCurSel _ctrlMenu);
    _ctrlContentTitle = _dsp displayCtrl 8;
    _ctrlContentTitle ctrlSetText getText (missionConfigFile >> "CfgServerInfoMenu" >> "menuItems" >> _className >> "title");
    _ctrlContent = _dsp displayCtrl 9;

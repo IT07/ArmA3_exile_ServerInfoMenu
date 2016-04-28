@@ -16,7 +16,8 @@ if not isNull _dsp then
    _listBox = _dsp displayCtrl 7;
    _listBoxItems = "isClass _x" configClasses (missionConfigFile >> "CfgServerInfoMenu" >> "menuItems");
    {
-      _listBox lbAdd (toUpper (configName _x));
+      _item = _listBox lbAdd toUpper(getText(_x >> "menuName"));
+      _listBox lbSetData [_item, format["%1", configName _x]]; 
    } forEach _listBoxItems;
 
    [_dsp] spawn
@@ -25,7 +26,7 @@ if not isNull _dsp then
       _dsp = _this select 0;
       _ctrlUptime = _dsp displayCtrl 2;
       _ctrlPlayerCount = _dsp displayCtrl 3;
-      while {true} do
+      while {not isNull _dsp} do
       {
          scopeName "loop";
          if not isNull _dsp then
@@ -45,10 +46,17 @@ if not isNull _dsp then
    };
 
    {
-      _x ctrlSetFade 0;
-      _x ctrlCommit 0.1;
-      playSound ["ReadOutClick", true];
-      uiSleep 0.1;
+      scopeName "anim";
+      if not isNull _dsp then
+      {
+         _x ctrlSetFade 0;
+         _x ctrlCommit 0.1;
+         playSound ["ReadOutClick", true];
+         uiSleep 0.1;
+      } else
+      {
+         breakOut "anim";
+      };
    } forEach (allControls _dsp);
    _listBox lbSetCurSel 0;
 };
