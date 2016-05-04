@@ -2,7 +2,7 @@ class CfgServerInfoMenu
 {
    antiHACK = "infiSTAR + BattlEye";
    hostedBy = "GamerClanName";
-   ipPort = "123.456.789:2302";
+   ipPort = "000.123.456.789:2302";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
    restart = 3; // Amount of hours before server automatically restarts
    serverName = "Name of this server";
