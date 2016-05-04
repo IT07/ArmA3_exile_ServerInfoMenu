@@ -178,7 +178,7 @@ class RscDisplayServerInfoMenu
          colorText[] = {1,1,1,0.95};
          font = "PuristaLight";
          idc = 1;
-         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.5)";
+         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25)";
       };
       class serverUptime:RscText
       {
