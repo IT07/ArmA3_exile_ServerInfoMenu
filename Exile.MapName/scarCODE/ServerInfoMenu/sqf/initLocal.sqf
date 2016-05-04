@@ -18,8 +18,9 @@ if hasInterface then
       while {true} do
          {
             _player = player;
-            _player addAction ["<img size='1.25' image='\a3\ui_f\data\Map\VehicleIcons\iconVirtual_ca.paa' />   Server Info Menu","createDialog'RscDisplayServerInfoMenu'","",-1,false,true,getText(missionConfigFile >> "CfgServerInfoMenu" >> "openKey"),"alive player"];
-            waitUntil { if not(_player isEqualTo player) then {true} else {uiSleep 3; false} };
+            _action = _player addAction ["<img size='1.25' image='\a3\ui_f\data\Map\VehicleIcons\iconVirtual_ca.paa' />   Server Info Menu","createDialog'RscDisplayServerInfoMenu'","",-1,false,true,getText(missionConfigFile >> "CfgServerInfoMenu" >> "openKey"),"alive player"];
+            waitUntil { if not(alive player) then { _player removeAction _action; true } else { uiSleep 2; false} };
+            waitUntil { if not(_player isEqualTo player) then {true} else {uiSleep 2; false} };
             uiSleep 1;
          };
    };
