@@ -1,5 +1,6 @@
 class CfgServerInfoMenu
 {
+   addAction = 1; // Enable/disable action menu item | use 0 to disable | default: 1 (enabled)
    antiHACK = "infiSTAR + BattlEye";
    hostedBy = "GamerClanName";
    ipPort = "000.123.456.789:2302";
