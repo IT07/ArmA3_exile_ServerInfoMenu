@@ -17,7 +17,7 @@ if not isNull _dsp then
    _listBoxItems = "isClass _x" configClasses (missionConfigFile >> "CfgServerInfoMenu" >> "menuItems");
    {
       _item = _listBox lbAdd toUpper(getText(_x >> "menuName"));
-      _listBox lbSetData [_item, format["%1", configName _x]]; 
+      _listBox lbSetData [_item, format["%1", configName _x]];
    } forEach _listBoxItems;
 
    [_dsp] spawn
@@ -50,9 +50,9 @@ if not isNull _dsp then
       if not isNull _dsp then
       {
          _x ctrlSetFade 0;
-         _x ctrlCommit 0.1;
+         _x ctrlCommit 0.05;
          playSound ["ReadOutClick", true];
-         uiSleep 0.1;
+         uiSleep 0.05;
       } else
       {
          breakOut "anim";
