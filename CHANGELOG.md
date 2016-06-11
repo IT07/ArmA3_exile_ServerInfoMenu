@@ -1,3 +1,8 @@
+###June 11th, 2016
+**[ADDED]** option to enable/disable action menu item <br />
+**[NEW]** menu now closes in a fancy way <br />
+<br /> 
+
 ###May 4th, 2016
 **[CHANGED]** font size of IP:PORT to accommodate for larger IP addresses <br />
 **[FIXED]** incorrect default IP address length <br />
