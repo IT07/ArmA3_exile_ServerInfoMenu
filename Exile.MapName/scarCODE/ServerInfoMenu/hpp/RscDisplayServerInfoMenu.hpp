@@ -1,6 +1,7 @@
 class RscDisplayServerInfoMenu
 {
    idd = 7770;
+   onKeyDown = "if (_this select 1 isEqualTo 0x01) then { [] ExecVM 'scarCODE\ServerInfoMenu\sqf\onEscape.sqf' }; true";
    onLoad = "uiNamespace setVariable ['RscDisplayServerInfoMenu', _this select 0]; [] ExecVM 'scarCODE\ServerInfoMenu\sqf\onLoad.sqf'; playSound ['ZoomIn', true]; 'DynamicBlur' ppEffectEnable true; 'DynamicBlur' ppEffectAdjust [7]; 'DynamicBlur' ppEffectCommit 0.1";
    onUnLoad = "uiNamespace setVariable ['RscDisplayServerInfoMenu', displayNull]; playSound ['ZoomOut', true]; 'DynamicBlur' ppEffectAdjust [0]; 'DynamicBlur' ppEffectCommit 0.1";
    movingEnable = 1;
@@ -152,7 +153,7 @@ class RscDisplayServerInfoMenu
       tooltipColorText[] = {1,1,1,1};
       type = 5;
    };
-   class Controls
+   class controls
    {
       class serverTitle:RscText
       {
@@ -252,7 +253,7 @@ class RscDisplayServerInfoMenu
          x = 0 * GUI_GRID_W + GUI_GRID_X;
          y = 6.85 * GUI_GRID_H + GUI_GRID_Y;
          w = 9 * GUI_GRID_W;
-         h = 10 * GUI_GRID_H;
+         h = 15 * GUI_GRID_H;
       };
       class menuTitle:RscText
       {
