@@ -5,6 +5,7 @@ class CfgServerInfoMenu
    hostedBy = "GamerClanName";
    ipPort = "000.123.456.789:2302";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
+   openAtLogin = yes;
    restart = 3; // Amount of hours before server automatically restarts
    serverName = "Name of this server";
    class menuItems
