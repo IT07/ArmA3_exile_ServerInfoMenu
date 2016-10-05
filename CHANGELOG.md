@@ -1,5 +1,6 @@
 ###Oct5.2016
 **[ADDED]** possibility to add structured text to the title of each menu section ( @koutamarto ) <br />
+**[CHANGED]** openAtLogin from yes to no <br />
 **[TWEAKED]** all code syntax <br />
 <br />
 
