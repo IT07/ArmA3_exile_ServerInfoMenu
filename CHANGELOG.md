@@ -1,6 +1,11 @@
+###Oct5.2016
+**[ADDED]** possibility to add structured text to the title of each menu section ( @koutamarto ) <br />
+**[TWEAKED]** all code syntax <br />
+<br />
+
 ###August 8, 2016
 **[ADDED]** option to enable/disable the automatic opening of the menu when player has finished loading in <br />
-<br /> 
+<br />
 
 ###June 11, 2016
 **[ADDED]** option to enable/disable action menu item <br />
