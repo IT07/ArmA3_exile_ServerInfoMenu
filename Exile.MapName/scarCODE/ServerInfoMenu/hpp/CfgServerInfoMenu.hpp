@@ -5,16 +5,16 @@ class CfgServerInfoMenu
    hostedBy = "GamerClanName";
    ipPort = "000.123.456.789:2302";
    openKey = "User7"; // https://community.bistudio.com/wiki/inputAction/actions
-   openAtLogin = yes;
+   openAtLogin = no;
    restart = 3; // Amount of hours before server automatically restarts
    serverName = "Name of this server";
    class menuItems
    {
-
+      // title AND content accept formatted text ( since update Oct5.2016 )
       class first
       {
          menuName = "General";
-         title = "GENERAL INFORMATION";
+         title = "<t color='#ffffff'>GENERAL INFORMATION</t>";
          content[] = {
             "This is some placeholder text"
          };
