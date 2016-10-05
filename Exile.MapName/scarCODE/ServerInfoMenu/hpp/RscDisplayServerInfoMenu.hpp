@@ -299,7 +299,7 @@ class RscDisplayServerInfoMenu
          idc = 7;
          onLBSelChanged = "[] ExecVM 'scarCODE\ServerInfoMenu\sqf\handleContent.sqf'";
       };
-      class contentTitle:RscText
+      class contentTitle:RscStructuredText
       {
          x = 9.15 * GUI_GRID_W + GUI_GRID_X;
          y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
@@ -311,7 +311,7 @@ class RscDisplayServerInfoMenu
          font = "PuristaLight";
          idc = 8;
          shadow = 0;
-         sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.35)";
+         size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.35)";
       };
       class bgContent:RscBackground
       {
